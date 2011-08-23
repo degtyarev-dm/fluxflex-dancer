@@ -4,4 +4,4 @@ RewriteEngine On
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /public/dispatch.fcgi/$1 [QSA,L]
+RewriteRule ^(.*)$ dispatch.fcgi/$1 [QSA,L]
