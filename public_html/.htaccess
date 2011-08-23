@@ -1,7 +1,7 @@
 Options +FollowSymLinks +ExecCGI
-DirectoryIndex dispatch.fcgi index.html index.htm
+DirectoryIndex app.pl dispatch.fcgi index.html index.htm
 RewriteEngine On
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /public/dispatch.fcgi/$1 [QSA,L]
+RewriteRule ^(.*)$ /bin/app.pl/$1 [QSA,L]
