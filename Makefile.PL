@@ -15,6 +15,8 @@ WriteMakefile(
         'Test::More' => 0,
         'YAML'       => 0,
         'Dancer'     => 1.3070,
+        'Plack'	=> 0,
+        'Plack::Request' => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'simpleDancer-*' },
