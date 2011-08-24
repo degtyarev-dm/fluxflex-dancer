@@ -1,1 +1,0 @@
-./public/dispatch.fcgi
