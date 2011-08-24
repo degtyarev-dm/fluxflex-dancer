@@ -1,0 +1,11 @@
+[permission]
+public_html     666
+
+[setup]
+git submodule init
+cpanm -L extlib < requires.txt
+
+[deploy]
+git submodule update
+cpanm -L extlib < requires.txt
+env PERL5LIB=extlib
