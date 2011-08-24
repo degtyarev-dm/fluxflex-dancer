@@ -1,3 +1,4 @@
 Dancer
 YAML
+Plack
 Plack::Request
